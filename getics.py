@@ -2,7 +2,7 @@ import requests
 
 
 def wkd2d(week_list, index):
-    return "".join(week_list[int(index)-1].split('-'))
+    return "".join(week_list[int(index) % 7].split('-'))
 
 
 def lessons2time(lessons):
